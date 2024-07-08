@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator HOMA</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Kalkulator wskaźnika HOMA</h1>
+    <form action="/calculate" method="post">
+        <div class="form-group">
+            <label for="glukoza">Glukoza (mg/dL):</label>
+            <input type="number" id="glukoza" name="glucose" class="form-control" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="insulina">Insulina (µU/mL):</label>
+            <input type="number" id="insulina" name="insulin" class="form-control" step="0.01" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Oblicz</button>
+    </form>
+</div>
+</body>
+</html>
